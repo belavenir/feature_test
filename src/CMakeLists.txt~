@@ -1,0 +1,53 @@
+FIND_PACKAGE(OpenCV REQUIRED)
+
+ADD_EXECUTABLE( siftsift sift_sift.cpp )
+TARGET_LINK_LIBRARIES( siftsift
+	${OpenCV_LIBS}) 
+ 
+ADD_EXECUTABLE( harrissurf harris_surf.cpp )
+TARGET_LINK_LIBRARIES( harrissurf
+	${OpenCV_LIBS}) 
+
+ 
+ADD_EXECUTABLE( fastsift fast_sift.cpp )
+TARGET_LINK_LIBRARIES( fastsift
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( msersift mser_sift.cpp )
+TARGET_LINK_LIBRARIES( msersift
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( surfsurf surf_surf.cpp )
+TARGET_LINK_LIBRARIES( surfsurf
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( surfsift surf_sift.cpp )
+TARGET_LINK_LIBRARIES( surfsift
+	${OpenCV_LIBS}) 
+
+
+ADD_EXECUTABLE( orborb orb_orb.cpp )
+TARGET_LINK_LIBRARIES( orborb
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( fastorb fast_orb.cpp )
+TARGET_LINK_LIBRARIES( fastorb
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( surfbrief surf_brief.cpp )
+TARGET_LINK_LIBRARIES( surfbrief
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( briskbrisk brisk_brisk.cpp )
+TARGET_LINK_LIBRARIES( briskbrisk
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( briskfreak brisk_freak.cpp )
+TARGET_LINK_LIBRARIES( briskfreak
+	${OpenCV_LIBS}) 
+
+ADD_EXECUTABLE( surfbrisk surf_brisk.cpp )
+TARGET_LINK_LIBRARIES( surfbrisk
+	${OpenCV_LIBS}) 
+
+
